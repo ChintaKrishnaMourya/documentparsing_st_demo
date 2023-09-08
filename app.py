@@ -78,7 +78,7 @@ def parser(all_text):
         st.error(f"Error parsing Document: {e}")
 
 st.set_page_config(page_title="Document Parser", page_icon="📄")
-
+st.header("Document Parsing")
 resume = st.file_uploader("Upload Document", accept_multiple_files=False)
 
 if st.button("Submit"):
