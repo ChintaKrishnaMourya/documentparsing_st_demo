@@ -48,12 +48,12 @@ def parser(all_text):
         Step-1: 
         Analyze and parse the following information from the PDF text, do not just extract the data, rephrase it meaningfully:
         Choose the valid fields from the PDF text that you feel necessary and make 
-        If not an 'invoice', 'packing list', 'bill of lading', 'cargo permit', then all the key's value should be null.
+        If text is not an 'invoice', 'packing list', 'bill of lading', 'cargo permit', then give output as this is not 'invoices', 'packing list', 'bill of lading', 'cargo permit' .
 
         Step-2:
         Return the meaningful parsed data in a structured JSON format with keys and corresponding values-
         
-        If not an 'invoice', 'packing list', 'bill of lading', 'cargo permit', then all the key's value should be null.
+        If text is not an 'invoice', 'packing list', 'bill of lading', 'cargo permit', then give output as this is not 'invoices', 'packing list', 'bill of lading', 'cargo permit'.
 
         Step-3:
         Only return the parsed JSON format resume, nothing else.
