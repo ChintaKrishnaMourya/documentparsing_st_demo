@@ -40,7 +40,7 @@ def get_choice_text_from_prompt(messages):
 def parser(all_text):
     try:
         system = """
-        You are an excellent NLP engineer and data scientist, and your task is to analyze and parse candidate resumes into meaningful structured JSON format.
+        Your task is to analyze and parse the text into a meaningful structured JSON format.
         You will be provided with text extracted from 'invoices', 'packing list', 'bill of lading', 'cargo permit' PDFs.
 
         The system instruction is:
