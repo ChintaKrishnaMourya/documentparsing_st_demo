@@ -56,10 +56,10 @@ def parser(all_text):
         If text is not an 'invoice', 'packing list', 'bill of lading', 'cargo permit', then give output as this is not 'invoices', 'packing list', 'bill of lading', 'cargo permit'.
 
         Step-3:
-        Only return the parsed JSON format resume, nothing else.
+        Only return the parsed JSON format, nothing else.
         """
         prompt = f"""
-        Only return the structured parsed JSON format of the resume of the candidate.
+        Only return the structured parsed JSON format of 'invoice', 'packing list', 'bill of lading', 'cargo permit'.
         Extracted text is delimited by triple backticks below.
 
         Extracted Text:```{all_text}```
