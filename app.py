@@ -91,7 +91,7 @@ if st.button("Submit"):
                 f.write(resume.read())
 
             extracted_text = extract_text_from_pdf(file_path)
-            st.write("Text Extracted\n")
+            st.write(f"Text Extracted :\n {extracted_text}")
             parsed_json = parser(extracted_text)
             st.write("Information Parsed\n")
             # Display the parsed JSON
